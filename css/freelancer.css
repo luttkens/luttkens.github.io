@@ -18,7 +18,7 @@ a:hover,
 a:focus,
 a:active,
 a.active {
-  color: #18BC9C;
+  color: #255066;
 }
 h1,
 h2,
@@ -29,6 +29,9 @@ h6 {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
+}
+li.dark{
+  background: #408a7c;
 }
 hr.star-light,
 hr.star-primary {
