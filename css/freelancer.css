@@ -8,7 +8,7 @@ body {
   overflow-x: hidden;
 }
 p{
-  padding-bottom: 25px;
+  padding-top: 25px;
 }
 p, li {
   font-size: 20px;
@@ -17,11 +17,12 @@ p.small, li.small {
   font-size: 16px;
 }
 a,
-a:hover,
 a:focus,
+a:hover,
 a:active,
 a.active {
   color: #255066;
+  text-decoration: underline;
 }
 h1,
 h2,
@@ -78,7 +79,6 @@ header {
   background-image: url("../img/sophieundmagnus.jpg");
   background-size: cover;
   color: white;
-  text-shadow: 0px 0px 15px #000000;
 }
 header .container {
   padding-top: 100px;
@@ -88,6 +88,11 @@ header img {
   display: block;
   margin: 0 auto 20px;
 }
+
+header .intro-text {
+  text-shadow: 0px 0px 15px #000000;
+}
+
 header .intro-text .name {
   display: block;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -119,16 +124,26 @@ header .intro-text .skills {
   border: none;
   margin-bottom: 0px;
   padding: 15px;
+  border-radius: 0px;
 }
-.navbar-custom .navbar-brand {
-  color: white;
-}
+
+
+
 .navbar-custom .navbar-brand:hover,
 .navbar-custom .navbar-brand:focus,
 .navbar-custom .navbar-brand:active,
 .navbar-custom .navbar-brand.active {
   color: white;
 }
+
+.navbar-custom a,
+.navbar-custom a:hover,
+.navbar-custom a:focus,
+.navbar-custom a:active,
+.navbar-custom a.active {
+  color: #fff;
+}
+
 .navbar-custom .navbar-nav {
   letter-spacing: 1px;
 }
@@ -136,10 +151,11 @@ header .intro-text .skills {
   color: white;
 }
 .navbar-custom .navbar-nav li a:hover {
-  color: #18BC9C;
+  color: white;
 }
 .navbar-custom .navbar-nav li a:focus,
-.navbar-custom .navbar-nav li a:active {
+.navbar-custom .navbar-nav li a:active
+.navbar-custom .navbar-nav li a.active  {
   color: white;
 }
 .navbar-custom .navbar-nav li.active a {
@@ -190,8 +206,10 @@ section {
 section h2 {
   margin: 0;
   font-size: 3em;
+  color: #255066;
 }
-section.success {
+section.success,
+section.success h2 {
   background: #18bc9c;
   color: white;
 }
@@ -310,6 +328,11 @@ footer .footer-above {
   padding-top: 50px;
   background-color: #2C3E50;
 }
+footer .footer-above a {
+  color: #98aec4;
+  font-weight: 200;
+  
+}
 footer .footer-col {
   margin-bottom: 50px;
 }
@@ -318,12 +341,13 @@ footer .footer-below {
   background-color: #233140;
 }
 .btn-outline {
-  color: white;
+  color: #255066;
   font-size: 20px;
-  border: solid 2px white;
-  background: transparent;
+  border: solid 0px #255066;
+  background: white;
   transition: all 0.3s ease-in-out;
   margin-top: 15px;
+  text-decoration: none;
 }
 .btn-outline:hover,
 .btn-outline:focus,
@@ -331,13 +355,13 @@ footer .footer-below {
 .btn-outline.active {
   color: #18BC9C;
   background: white;
-  border: solid 2px white;
 }
 .btn-primary {
   color: white;
   background-color: #2C3E50;
   border-color: #2C3E50;
   font-weight: 700;
+  text-decoration: none;
 }
 .btn-primary:hover,
 .btn-primary:focus,
