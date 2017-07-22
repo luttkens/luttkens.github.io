@@ -7,6 +7,9 @@ body {
   font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   overflow-x: hidden;
 }
+p{
+  padding-bottom: 25px;
+}
 p, li {
   font-size: 20px;
 }
@@ -110,11 +113,12 @@ header .intro-text .skills {
 }
 .navbar-custom {
   background: #2C3E50;
-  opacity: 0.8;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
   border: none;
+  margin-bottom: 0px;
+  padding: 15px;
 }
 .navbar-custom .navbar-brand {
   color: white;
