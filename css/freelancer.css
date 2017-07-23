@@ -75,8 +75,8 @@ hr.star-primary:after {
 }
 header {
   text-align: center;
-  background: #18BC9C;
-  background-image: url("../img/sophieundmagnus.jpg");
+  background: #2C3E50;
+  background-image: url("../img/sophieundmagnus-lowres.jpg");
   background-size: cover;
   color: white;
 }
